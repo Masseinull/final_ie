@@ -33,9 +33,9 @@ const UserHeader = ({title,button,link}) => {
     <BoxStyle>
       <Typography variant="h3">{title}</Typography>
 
-      {/*<Button href={link} variant="contained" disableElevation startIcon={<BiPlus />}>*/}
-      {/* {button}*/}
-      {/*</Button>*/}
+      <Button href={link} variant="contained" disableElevation startIcon={<BiPlus />}>
+       {button}
+      </Button>
     </BoxStyle>
   );
 };

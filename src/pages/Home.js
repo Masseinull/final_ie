@@ -26,7 +26,7 @@ const Home = () => {
             {/* main container */}
             <ContainerStyle maxWidth="lg">
                 {/* Header */}
-                <UserHeader />
+                {/*<UserHeader />*/}
                 <LeftPanel
                     flexDirectio="center"
                     title="به سامانه انتخاب واحد خوش آمدید"

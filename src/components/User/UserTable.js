@@ -1,5 +1,4 @@
 import { useState,useEffect } from "react";
-import { userData } from "../../api/userApi";
 
 import {
   TableContainer,
@@ -181,86 +180,7 @@ const UserTable = () => {
       {/* Toolbar */}
       <TableToolbar numSelected={selectedItems.length} />
 
-      {/* Table */}
-      <TableContainer>
-        <TableStyle>
-          {/* Table Head */}
-          <UserTableHead
-            numSelected={selectedItems.length}
-            order={order}
-            orderBy={orderBy}
-            onSelectAllClick={handleSelectAllClick}
-            onRequestSort={handleRequestSort}
-            rowCount={userData.length}
-          />
 
-          {/* Table Body */}
-          <TableBody>
-            {sortableArr(userData, getComparator(order, orderBy))
-              .slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage)
-              .map((user, idx) => {
-                const isItemSelected = selectedItems.indexOf(user.name) !== -1;
-                const labelId = `enhanced-table-checkbox-${idx}`;
-
-                return (
-                  <TableRow
-                    key={user.name + idx}
-                    hover
-                    role="checkbox"
-                    tabIndex={-1}
-                    aria-checked={isItemSelected}
-                    selected={isItemSelected}
-                  >
-                    <TableCell padding="checkbox">
-                      <Checkbox
-                        color="primary"
-                        checked={isItemSelected}
-                        inputProps={{ "aria-labelledby": labelId }}
-                        onChange={(e) => handleClick(e, user.name)}
-                      />
-                    </TableCell>
-
-                    <TableCell
-                      component="th"
-                      id={labelId}
-                      scope="row"
-                      padding="none"
-                    >
-                      {user.name}
-                    </TableCell>
-                    <TableCell>{user.company}</TableCell>
-                    <TableCell>{user.role}</TableCell>
-                    <TableCell>{user.verified}</TableCell>
-                    <TableCell>
-                      <StatusText text={user.status} />
-                    </TableCell>
-                    <TableCell align="right">
-                      <UserMore />
-                    </TableCell>
-                  </TableRow>
-                );
-              })}
-
-            {/* empty rows can be added below */}
-            {emptyRows > 0 && (
-              <TableRow style={{ height: 53 * emptyRows }}>
-                <TableCell colSpan={6} />
-              </TableRow>
-            )}
-          </TableBody>
-        </TableStyle>
-      </TableContainer>
-
-      {/* Table Pagination */}
-      <TablePagination
-        rowsPerPageOptions={[5, 10, 25]}
-        component="div"
-        count={userData.length}
-        rowsPerPage={rowsPerPage}
-        page={page}
-        onPageChange={handleChangePage}
-        onRowsPerPageChange={handleChangeRowsPerPage}
-      />
     </>
   );
 };
