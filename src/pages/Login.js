@@ -74,7 +74,7 @@ const Login = () => {
           flexDirectio="center"
           title="به سامانه انتخاب واحد خوش آمدید"
           img={LoginPhoto}
-          imgAlt="Login Image"
+          imgAlt="Login Impm age"
         />
 
         <RightPanelStyle>

@@ -61,7 +61,7 @@ const CreateStudent = () => {
     <>
       {/* Helmet */}
       <Helmet>
-        <title>Register | MUI Dash</title>
+        <title>دانشجوی جدید | سامانه انتخاب واحد</title>
       </Helmet>
 
 
