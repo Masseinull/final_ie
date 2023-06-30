@@ -1,4 +1,4 @@
-import {Redirect, Route, Switch} from "react-router-dom";
+import { Redirect, Route, Switch } from "react-router-dom";
 import "./App.css";
 
 // components
@@ -19,14 +19,20 @@ const App = () => {
                 <DashboardLayout>
                     <Switch>
                         <Route path="/" exact>
-                            <Redirect to="/login"/>
+                            <Redirect to="/login" />
                         </Route>
 
-                        <Route path="/dashboard" component={Home}/>
-                        <Route path="/login" component={Login}/>
-                        <Route path="/prof" component={Professors}/>
-                        <Route path="/student" component={Student}/>
-                        <Route path="/manager" component={Manager}/>
+                        <Route path="/dashboard" component={Home} />
+                        <Route path="/login" component={Login} />
+                        <Route path="/prof" component={Professors} />
+                        <Route path="/student" component={Student} />
+                        <Route path="/manager" component={Manager} />
+
+                        <Route path="/cMcourse" component={CreateMainCourse} />
+                        <Route path="/cScourse" component={CreateSemiCourse} />
+                        <Route path="/cProf" component={CreateProfessor} />
+                        <Route path="/cStudent" component={CreateStudent} />
+                        <Route path="/cManager" component={CreateManager} />
                     </Switch>
                 </DashboardLayout>
             </GeneralProvider>
