@@ -9,7 +9,7 @@ import LeftPanel from "../components/AuthPages/LeftPanel";
 import SectionDivider from "../components/AuthPages/SectionDivider";
 import FormcSCourse from "../components/AuthPages/FormcSCourse"
 // img
-import RegisterPhoto from "../images/auth/register.png";
+import RegisterPhoto from "../images/register.png";
 
 // styles
 const ContainerBoxStyle = styled(Box)(({ theme }) => ({

@@ -10,6 +10,12 @@ import Student from "./pages/students";
 import Manager from "./pages/managers";
 import Professors from "./pages/professors";
 import Home from "./pages/Home"
+import CreateMainCourse from "./pages/cCourse"
+import CreateSemiCourse from "./pages/cSemiCourse"
+import CreateProfessor from "./pages/cProf"
+import CreateStudent from "./pages/cStudent"
+import CreateManager from "./pages/cManager"
+import Faculty from "./pages/Faculty"
 
 const App = () => {
     return (
@@ -27,6 +33,7 @@ const App = () => {
                         <Route path="/prof" component={Professors} />
                         <Route path="/student" component={Student} />
                         <Route path="/manager" component={Manager} />
+                        <Route path="/faculty" component={Faculty} />
 
                         <Route path="/cMcourse" component={CreateMainCourse} />
                         <Route path="/cScourse" component={CreateSemiCourse} />

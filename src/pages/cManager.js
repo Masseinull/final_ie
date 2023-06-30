@@ -10,7 +10,7 @@ import SectionDivider from "../components/AuthPages/SectionDivider";
 import FormcManager from "../components/AuthPages/FormcManager"
 
 // img
-import RegisterPhoto from "../images/auth/register.png";
+import RegisterPhoto from "../images/register.png";
 
 // styles
 const ContainerBoxStyle = styled(Box)(({ theme }) => ({
