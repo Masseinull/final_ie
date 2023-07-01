@@ -50,9 +50,9 @@ const App = () => {
           <Route path="/manager" component={Manager} />
           <Route path="/mainCourse" component={Courses} />
           <Route path="/semiCourse" component={SemiCourses} />
-          {/* <Route path="/register" component={Register} />
+          {/* <Route path="/register" component={Register} /> */}
 
-          <Route path="/preregister" component={PreRegister} /> */}
+          <Route path="/preregister" component={PreRegister} />
 
           <Route path="/cMcourse" component={CreateMainCourse} />
           <Route path="/cScourse" component={CreateSemiCourse} />
