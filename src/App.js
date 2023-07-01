@@ -35,7 +35,7 @@ const App = () => {
       <DashboardLayout>
         <Switch>
           <Route path="/" exact>
-            <Redirect to="/dashboard" />
+            <Redirect to="/login" />
           </Route>
 
           <Route path="/dashboard" component={Faculty} />
