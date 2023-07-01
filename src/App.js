@@ -60,9 +60,9 @@ const App = () => {
           <Route path="/cProf" component={CreateProfessor} />
           <Route path="/cStudent" component={CreateStudent} />
           <Route path="/cManager" component={CreateManager} />
-{/* 
+
           <Route path="/uStudent" component={UpdateStudent}/>
-          <Route path="/uProf" component={UpdateProfessor}/> */}
+          <Route path="/uProf" component={UpdateProfessor}/>
 
           <Route path="/term" component={Term} />
           <Route path="/cTerm" component={CreateTerm} />
